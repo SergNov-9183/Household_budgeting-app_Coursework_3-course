@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Coursework_3course_BudgetApp"
         tools:targetApi="31">
         <activity
+            android:name=".AddOperationActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
