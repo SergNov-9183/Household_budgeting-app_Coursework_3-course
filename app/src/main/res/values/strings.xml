@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Coursework_3course_BudgetApp</string>
+    <string name="app_name">Household_Budgeting_App</string>
+
+    <string name="place_holder">Place Holder</string>
 </resources>
