@@ -6,5 +6,6 @@ import android.app.Application
 class HouseholdBudgettingApplication : Application()
 {
     private val database by lazy { HouseholdBudgettingDatabase.getDatabase(this) }
-    val repository by lazy { BankAccountRepository(database.bankAccountDao()) }
+    val bankAccauntRepository by lazy { BankAccauntRepository(database.bankAccountDao()) }
+    val categoryRepository by lazy { CategoryRepository(database.categoryDao()) }
 }

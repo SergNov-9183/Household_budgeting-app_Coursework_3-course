@@ -1,16 +1,20 @@
 package com.example.household_budgeting_app
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.household_budgeting_app.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), BankAccountClickListener
 {
+    var moveToCategoriesButton: Button? = null
     private lateinit var binding: ActivityMainBinding
     private val accountViewModel: AccountViewModel by viewModels {
-        BankAccountModelFactory((application as HouseholdBudgettingApplication).repository)
+        BankAccountModelFactory((application as HouseholdBudgettingApplication).bankAccauntRepository)
     }
 
     override fun onCreate(savedInstanceState: Bundle?)
@@ -23,6 +27,12 @@ class MainActivity : AppCompatActivity(), BankAccountClickListener
             BankAccountSheet(null).show(supportFragmentManager, "newAccauntTag")
         }
         setRecyclerView()
+
+        moveToCategoriesButton = findViewById<Button>(R.id.move_to_categories_btn)
+        moveToCategoriesButton?.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this@MainActivity, CategoriesActivity::class.java)
+            startActivity(intent)
+        })
     }
 
     private fun setRecyclerView()

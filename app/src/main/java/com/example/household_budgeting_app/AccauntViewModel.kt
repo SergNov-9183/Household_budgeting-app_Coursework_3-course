@@ -3,7 +3,7 @@ package com.example.household_budgeting_app
 import androidx.lifecycle.*
 import kotlinx.coroutines.launch
 
-class AccountViewModel(private val repository: BankAccountRepository): ViewModel()
+class AccountViewModel(private val repository: BankAccauntRepository): ViewModel()
 {
     val accauntItems: LiveData<List<BankAccount>> = repository.allAccauntItems.asLiveData()
 
@@ -16,7 +16,7 @@ class AccountViewModel(private val repository: BankAccountRepository): ViewModel
     }
 }
 
-class BankAccountModelFactory(private val repository: BankAccountRepository) : ViewModelProvider.Factory
+class BankAccountModelFactory(private val repository: BankAccauntRepository) : ViewModelProvider.Factory
 {
     override fun <T : ViewModel> create(modelClass: Class<T>): T
     {
