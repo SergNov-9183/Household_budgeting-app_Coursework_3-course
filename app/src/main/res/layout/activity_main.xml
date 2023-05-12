@@ -50,8 +50,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="89dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="115dp"
         android:text="Categories" />
+
+    <Button
+        android:id="@+id/move_to_operations_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginBottom="116dp"
+        android:text="Operations" />
+
 
 </RelativeLayout>

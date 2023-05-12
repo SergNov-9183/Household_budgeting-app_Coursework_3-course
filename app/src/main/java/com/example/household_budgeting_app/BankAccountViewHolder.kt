@@ -14,7 +14,7 @@ class BankAccountViewHolder(
     fun bindAccauntItem(bankAccount: BankAccount)
     {
         binding.name.text = bankAccount.name
-        binding.dueTime.text = bankAccount.moneyAmount.toString()
+        binding.moneyAmount.text = bankAccount.moneyAmount.toString()
 
         binding.accauntCellContainer.setOnClickListener{
             clickListener.editBankAccountItem(bankAccount)

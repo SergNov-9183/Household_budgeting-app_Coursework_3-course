@@ -12,6 +12,7 @@ import com.example.household_budgeting_app.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity(), BankAccountClickListener
 {
     var moveToCategoriesButton: Button? = null
+    var moveToOperationsButton: Button? = null
     private lateinit var binding: ActivityMainBinding
     private val accountViewModel: AccountViewModel by viewModels {
         BankAccountModelFactory((application as HouseholdBudgettingApplication).bankAccauntRepository)
@@ -31,6 +32,12 @@ class MainActivity : AppCompatActivity(), BankAccountClickListener
         moveToCategoriesButton = findViewById<Button>(R.id.move_to_categories_btn)
         moveToCategoriesButton?.setOnClickListener(View.OnClickListener {
             val intent = Intent(this@MainActivity, CategoriesActivity::class.java)
+            startActivity(intent)
+        })
+
+        moveToOperationsButton = findViewById<Button>(R.id.move_to_operations_btn)
+        moveToOperationsButton?.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this@MainActivity, OperationsActivity::class.java)
             startActivity(intent)
         })
     }

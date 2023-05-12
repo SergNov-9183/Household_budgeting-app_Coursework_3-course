@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
-    android:id="@+id/accauntCellContainer"
+    android:id="@+id/operationCellContainer"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="90dp"
@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/name"
+            android:id="@+id/desc"
             android:text="@string/place_holder"
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_gravity="center"
@@ -27,12 +27,16 @@
             android:layout_marginHorizontal="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/money_amount"
+            android:id="@+id/sum"
             android:text="@string/place_holder"
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_gravity="center"
             />
 
+
+
     </LinearLayout>
+
+
 
 </androidx.cardview.widget.CardView>

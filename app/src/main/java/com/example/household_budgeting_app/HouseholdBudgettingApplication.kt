@@ -8,4 +8,5 @@ class HouseholdBudgettingApplication : Application()
     private val database by lazy { HouseholdBudgettingDatabase.getDatabase(this) }
     val bankAccauntRepository by lazy { BankAccauntRepository(database.bankAccountDao()) }
     val categoryRepository by lazy { CategoryRepository(database.categoryDao()) }
+    val operationRepository by lazy { OperationRepository(database.operationDao()) }
 }
