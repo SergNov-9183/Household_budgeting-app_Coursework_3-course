@@ -10,7 +10,7 @@ class CategoryRepository(private val categoryDao: CategoryDao)
     @WorkerThread
     suspend fun insertCategoryItem(category: Category)
     {
-        categoryDao.insertCategory(category)
+        System.out.println("Category id = " + categoryDao.insertCategory(category))
     }
 
     @WorkerThread

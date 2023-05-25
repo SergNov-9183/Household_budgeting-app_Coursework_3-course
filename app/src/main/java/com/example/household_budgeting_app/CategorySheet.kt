@@ -49,6 +49,7 @@ class CategorySheet(var category: Category?) : BottomSheetDialogFragment()
         if(category == null)
         {
             val newCategory = Category(name, type)
+
             categoryViewModel.addCategoryItem(newCategory)
         }
         else

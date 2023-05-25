@@ -21,7 +21,7 @@ class OperationsActivity : AppCompatActivity(), OperationClickListener
         setContentView(binding.root)
 
         binding.newOperationButton.setOnClickListener {
-            OperationSheet(null).show(supportFragmentManager, "newOperationTag")
+            OperationSheet(application, null).show(supportFragmentManager, "newOperationTag")
         }
         setRecyclerView()
     }
@@ -39,6 +39,6 @@ class OperationsActivity : AppCompatActivity(), OperationClickListener
 
     override fun editOperationItem(operation: Operation)
     {
-        OperationSheet(operation).show(supportFragmentManager,"newEditOperationTag")
+        OperationSheet(application, operation).show(supportFragmentManager,"newEditOperationTag")
     }
 }

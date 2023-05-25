@@ -41,7 +41,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="1dp"
         android:layout_marginTop="95dp"
-        android:layout_marginBottom="-2dp"
+        android:layout_marginBottom="70dp"
         android:backgroundTint="@color/design_default_color_background" />
 
     <Button
@@ -50,8 +50,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="115dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
         android:text="Categories" />
 
     <Button
@@ -60,8 +60,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="20dp"
         android:text="Operations" />
 
 
