@@ -124,7 +124,7 @@ class OperationSheet(private var application: Application, private var operation
         Log.d("New Bank Account id", newBankAccauntID.toString())
 
         if (operation == null) {
-            val newOperation = Operation(desc, sum.toInt(), count.toInt(), newCategoryID, newBankAccauntID)
+            val newOperation = Operation(desc, sum.toInt(), count.toInt(), newCategoryID, newBankAccauntID, System.currentTimeMillis() / 1000)
             operationViewModel.addOperationItem(newOperation)
         } else {
             operation!!.desc = desc

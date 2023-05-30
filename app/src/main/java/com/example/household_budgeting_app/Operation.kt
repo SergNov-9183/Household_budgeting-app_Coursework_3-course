@@ -28,5 +28,6 @@ data class Operation(
     @ColumnInfo(name = "count") var count: Int,
     @ColumnInfo(name = "categoryID") var categoryID: Int,
     @ColumnInfo(name = "bankAccauntID") var bankAccauntID: Int,
+    @ColumnInfo(name = "dateTime", defaultValue = "(strftime('%s','now','localtime'))") var dateTime: Long,
     @PrimaryKey(autoGenerate = true) var id: Int = 0
 )

@@ -62,7 +62,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/moneyAmount"
-            android:hint="Amount of Money">
+            android:hint="Initial amount of money"
+            android:digits="0123456789"
+            android:inputType="number">
 
         </com.google.android.material.textfield.TextInputEditText>
 

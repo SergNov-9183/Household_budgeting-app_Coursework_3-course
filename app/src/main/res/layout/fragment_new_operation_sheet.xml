@@ -45,7 +45,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/sum"
-            android:hint="Money spent">
+            android:hint="Money spent"
+            tools:ignore="ExtraText"
+            android:digits="0123456789"
+            android:inputType="number">
+
 
         </com.google.android.material.textfield.TextInputEditText>
 
@@ -62,7 +66,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/count"
-            android:hint="Count">
+            android:hint="Count"
+            android:digits="0123456789"
+            android:inputType="number">
+
 
         </com.google.android.material.textfield.TextInputEditText>
 

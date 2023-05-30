@@ -5,44 +5,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".AnalyticsActivity">
 
     <TextView
-        android:id="@+id/newBankAccountTitle"
+        android:id="@+id/newCategoryTitle"
         style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:text="Bank Accounts"
-        android:textSize="30sp" />
-
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/newBankAccountButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="?attr/colorPrimary"
-        android:padding="5dp"
-        android:text=""
-        android:textColor="?colorOnPrimary"
-        app:icon="@drawable/ic_baseline_add_24"
-        app:iconTint="?colorOnPrimary" />
+        android:layout_marginTop="5dp"
+        android:text="Operations analysis:"
+        android:textSize="20sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bankAccountsRecyclerView"
+        android:id="@+id/operationsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="95dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="@color/design_default_color_background" />
 
     <LinearLayout
@@ -52,34 +37,23 @@
         android:layout_alignParentBottom="true">
 
         <Button
-            android:id="@+id/move_to_categories_btn"
+            android:id="@+id/begin_date_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Categories"
+            android:text="begin date"
             android:textSize="11sp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"/>
-
-
-        <Button
-            android:id="@+id/move_to_operations_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Operations"
-            android:textSize="11sp"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="50dp"
             android:layout_weight="1"/>
 
         <Button
-            android:id="@+id/see_analiytics_btn"
+            android:id="@+id/end_date_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Analytics"
+            android:text="end date"
             android:textSize="11sp"
             android:layout_weight="1"/>
 
     </LinearLayout>
-
 
 
 </RelativeLayout>
